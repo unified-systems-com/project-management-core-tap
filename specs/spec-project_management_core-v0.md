@@ -15,9 +15,11 @@ This plugin ships no TAP-managed types in v0, so it declares no default dimensio
 
 ## Philosophy
 
-This is a thin v0 (ruled 2026-09-22 for the highbar starter set): it exists to put the piece on the board so a design can reference it, not to model the domain. The full `create-plugin-spec` interview, prior-art search and requirement buy-in run when this plugin grows past v0; nothing here pre-empts them.
+Work tracking is a vendor-neutral concept that several trackers observe: a GitLab issue, a GitHub issue and a Jira ticket are each a task, and a milestone means the same thing in all three. So the vocabulary lives in a `*_core` substrate that vendor plugins depend on downward, rather than in any one tracker's plugin, and a design can say "this work blocks that milestone" before anyone picks a tracker.
 
-Nothing in v0 is observed or designed by this plugin; it is a container other work is composed into.
+v0 is thin on purpose: highbar needs the plugin installable so its design can reference it, and no project has yet tracked work on the grid, so there is no real case to test a task or milestone type against. The types, and the full `create-plugin-spec` interview and prior-art search that justify them, come with the first project that does (`req-project-management-core-vocabulary`).
+
+Nothing in v0 is observed or designed by this plugin.
 
 **Provenance markers:** none in v0 (no types, no data).
 
