@@ -1,5 +1,5 @@
 manifest_version = "0"
-plugin_version = "0.1.0"
+plugin_version = "0.1.0" # x-release-please-version
 requires_tap = ">=0.2.1"
 slug = "project_management_core"
 name = "TAP Project Management Core"
@@ -14,4 +14,4 @@ status = "compatible"
 [[boot.records]]
 name = "ci"
 description = "RESERVED NAME (req-boot-bootstrap-ci-record): the stack this plugin's own tests run in — depends_on closure (empty) + self, offline, credential-free. The consumer flips self to editable."
-sha256 = "bc595b17c2776144276898a4e31bec0a6dcd29dcfbf66d75e448ca86b4136cab"
+sha256 = "0a286019b42f5daea39587094acb3754759529783b23b907c5297865cb25cf7b"
